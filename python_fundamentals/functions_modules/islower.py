@@ -1,4 +1,4 @@
-def islower(s):
+def islower(c):
     """
     Return True if all cased characters
     in the string are lowercase and there
@@ -14,4 +14,5 @@ def islower(s):
     >>> islower('')
     False
     """
-    return s.islower()
+
+    return 97 <= ord(c) <= 122
