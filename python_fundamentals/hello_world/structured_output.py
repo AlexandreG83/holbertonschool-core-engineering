@@ -1,8 +1,4 @@
-#!/usr/bin/python3
-"""
-output
-"""
-
+#!/usr/bin/env python3
 
 language = 'Python'
 print("Language: {}".format(language))
