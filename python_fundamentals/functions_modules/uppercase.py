@@ -1,18 +1,9 @@
 #!/usr/bin/env python3
 
 def uppercase(str):
-    """Convert a string to uppercase.
-
-    Args:
-        text: The string to convert.
-
-    Returns:
-        The uppercase version of the string.
-    """
-    result = ''
+    """Print a string in uppercase."""
     for char in str:
-        if 'a' <= char <= 'z':
-            result += chr(ord(char) - 32)
-        else:
-            result += char
-    print(result)
+        if ord(char) >= 97 and ord(char) <= 122:
+            char = chr(ord(char) - 32)
+        print("{}".format(char), end="")
+    print()
