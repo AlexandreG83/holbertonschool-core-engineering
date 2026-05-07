@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 def pow(a, b):
-    """Returns a to the power of b."""
-    if b < 0:
-        a = 1 / a
-        b = -b
     result = 1
-    for _ in range(b):
-        result *= a
+    if b < 0:
+        for i in range(-b):
+            result *= a
+        return 1 / result
+    else:
+        for i in range(b):
+            result *= a
     return result
