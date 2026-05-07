@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 for i in range(26):
     if i == 4 or i == 16:  # 4 is the index for 'e' and 16 is the index for 'q'
         continue  # Skip 'e' and 'q'

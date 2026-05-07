@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 number = __import__('random').randint(-10000, 10000)
 
 #Last digit of <number> is <digit> and is greater than 5

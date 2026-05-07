@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 def islower(c):
     """
     Return True if all cased characters

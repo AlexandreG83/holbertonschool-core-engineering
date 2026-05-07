@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 def pow(a, b):
     """Returns a to the power of b."""
     if b < 0:
