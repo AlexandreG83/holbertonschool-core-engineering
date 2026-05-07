@@ -1,6 +1,8 @@
 print("Language: Python")
 print("Version: 3")
+
 pi_approx = 3.14159
-print(f"Pi approx: {pi_approx:.2f}")
+print("Pi approx: {:.2f}".format(pi_approx))
+
 computation_valid = True
-print(f"Computation valid: {computation_valid}")
+print("Computation valid: {}".format(computation_valid))
