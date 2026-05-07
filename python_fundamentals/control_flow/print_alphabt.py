@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-for i in range(26):
-    if i == 4 or i == 16:
+for i in range(ord('a'), ord('z') + 1):
+    if chr(i) == 'e' or chr(i) == 'q':
         continue
-    letter = chr(97 + i)
-    print(letter, end='')
+    print("{}".format(chr(i)), end="")
