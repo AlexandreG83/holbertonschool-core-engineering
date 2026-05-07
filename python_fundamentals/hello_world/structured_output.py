@@ -6,7 +6,7 @@ version = 3
 pi = 3.141592653589793
 is_valid = 1 == 1
 
-print(f"Language: {language}")
-print(f"Version: {version}")
-print(f"Pi approx: {pi:.2f}")
-print(f"Computation valid: {is_valid}")
+print("Language: {}".format(language))
+print("Version: {}".format(version))
+print("Pi approx: {:.2f}".format(pi))
+print("Computation valid: {}".format(is_valid))
