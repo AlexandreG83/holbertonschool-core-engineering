@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 
-print("Language: Python")
-print("Version: 3")
+language = 'Python'
+print("Language: {}".format(language))
+version = 3
+print("Version: {}".format(version))
 
 pi_approx = 3.14159
 print("Pi approx: {:.2f}".format(pi_approx))
