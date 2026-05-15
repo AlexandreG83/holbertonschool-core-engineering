@@ -9,6 +9,9 @@ class Square(Rectangle):
 
     def __init__(self, size):
         """ Initialize a Square instance. """
-        self.integer_validator("size", size)
         super().__init__(size, size)
-        self.__size = sizes
+
+    def __str__(self):
+        """ Return the string representation of the Square. """
+        return "[Square] {}/{}".format(self._Rectangle__width,
+                                       self._Rectangle__height)
