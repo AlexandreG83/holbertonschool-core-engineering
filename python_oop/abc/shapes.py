@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 from abc import ABC, abstractmethod
 import math
 
@@ -19,7 +19,7 @@ class Circle(Shape):
     """Circle shape"""
 
     def __init__(self, radius):
-        self.radius = radius
+        self.radius = abs(radius)
 
     def area(self):
         return math.pi * (self.radius ** 2)
