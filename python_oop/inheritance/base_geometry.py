@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 
 class BaseGeometry:
-    """BaseGeometry class"""
+    """Represents a base geometry."""
 
     def area(self):
-        """area method"""
+        """compute the area of the geometry"""
         raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
-        """integer_validator method"""
+        """Validate that a value is a positive integer"""
         if not isinstance(value, int) or isinstance(value, bool):
             raise TypeError(f"{name} must be an integer")
         if value <= 0:
