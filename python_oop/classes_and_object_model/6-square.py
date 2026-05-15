@@ -89,15 +89,12 @@ class Square:
         Returns:
             str: The square rendered with '#' characters and position offset.
         """
-        result = []
-
-        if self.__size == 0:
-            return ""
-
-        for _ in range(self.__position[1]):
-            result.append("")
-
-        for _ in range(self.__size):
-            result.append(" " * self.__position[0] + "#" * self.__size)
-
-        return "\n".join(result)
+        if self.size == 0:
+            result += "\n"
+            return result
+        for _ in range(self.position[1]):
+            result += "\n"
+        for _ in range(self.size):
+            result += " " * self.position[0] + "#" * self.size + "\n"
+        result = result.rstrip("\n")
+        return result
