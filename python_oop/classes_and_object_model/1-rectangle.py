@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Defines a rectangle"""
 
+
 class Rectangle:
     """defines a rectangle"""
     def __init__(self, width=0, height=0):
