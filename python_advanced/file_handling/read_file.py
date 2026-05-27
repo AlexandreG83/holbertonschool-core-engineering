@@ -4,5 +4,7 @@
 
 def read_file(filename=""):
     """Read a UTF-8 text file and print its contents to stdout."""
-    with open('my_file_0.txt', 'r', encoding="utf-8") as f:
-        print(f.read())
+    read_data = ""
+    with open(filename, 'r', encoding="utf-8") as file:
+        read_data = file.read()
+        print(read_data)
