@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """Module that reads a text file and prints it to stdout."""
 
 
@@ -7,4 +7,4 @@ def read_file(filename=""):
     read_data = ""
     with open(filename, 'r', encoding="utf-8") as file:
         read_data = file.read()
-        print(read_data)
+        print(read_data, end='')
