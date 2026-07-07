@@ -7,7 +7,7 @@ import asyncio
 import websockets
 
 
-async def echo(websocket):
+async def connection_handler(websocket):
     """
     Receive messages from a client and send them back unchanged.
     """
@@ -19,7 +19,7 @@ async def main():
     """
     Start the WebSocket server and keep it running.
     """
-    async with websockets.serve(echo, "localhost", 8765):
+    async with websockets.serve(connection_handler, "localhost", 8765):
         await asyncio.Future()
 
 
