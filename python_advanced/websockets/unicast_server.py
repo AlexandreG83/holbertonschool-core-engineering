@@ -12,7 +12,7 @@ import websockets
 clients = set()
 
 
-async def handler(websocket):
+async def connection_handler(websocket):
     """
     Handle a single client connection.
     """
@@ -33,7 +33,7 @@ async def main():
     """
     Start the WebSocket server.
     """
-    async with websockets.serve(handler, "localhost", 8765):
+    async with websockets.serve(connection_handler, "localhost", 8765):
         await asyncio.Future()
 
 
