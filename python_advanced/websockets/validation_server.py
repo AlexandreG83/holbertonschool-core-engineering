@@ -5,17 +5,21 @@ WebSocket server with basic message validation.
 
 import asyncio
 import websockets
+from websockets.exceptions import ConnectionClosed
 
 
 async def connection_handler(websocket):
     """
     Receive messages, validate them, and respond accordingly.
     """
-    async for message in websocket:
-        if message.strip():
-            await websocket.send(f"OK:{message}")
-        else:
-            await websocket.send("ERR:EMPTY")
+    try:
+        async for message in websocket:
+            if message.strip():
+                await websocket.send(f"OK:{message}")
+            else:
+                await websocket.send("ERR:EMPTY")
+    except ConnectionClosed:
+        pass
 
 
 async def main():
